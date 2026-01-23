@@ -1,1 +1,100 @@
-<h1>Hello Coursera</h1> 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moonbite Bistro</title>
+  </head>
+  <body>
+    <header>
+      <img id="header-img" width="400" src="https://i.pinimg.com/736x/bd/df/c9/bddfc9efc989415ade4519000e963b2d.jpg" alt="Moonbite Bistro — уютный ресторан">
+      <h1>Moonbite Bistro</h1>
+      <nav>
+        <ul>
+          <li><a href="#menu">#меню</a></li>
+          <li><a href="#order-form">#форма-заказа</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="menu">
+        <h2>Меню</h2>
+        <article>
+          <img width="400" src="https://i.pinimg.com/736x/88/ae/e0/88aee0d0fc1a060017204215bb2ebdd2.jpg" alt="Бургер «Лунный» с сыром и салатом">
+          <h3>Бургер «Лунный»</h3>
+          <p>
+            Сочный бургер с сыром, салатом и фирменным соусом. <i>Цена: 220 грн</i>
+          </p>
+        </article>
+        <article>
+          <img width="400" src="https://i.pinimg.com/736x/66/74/f4/6674f4dc5a98f98526cbb23093b0ac89.jpg" alt="Паста «Сливочная комета» в соусе">
+          <h3>Паста «Сливочная комета»</h3>
+          <p>
+            Нежная паста в сливочном соусе с грибами и зеленью. <i>Цена: 190 грн</i>
+          </p>
+        </article>
+        <article>
+          <img width="400" src="https://i.pinimg.com/736x/ae/71/6a/ae716aeda71fe383c7ea12c81e44f962.jpg" alt="Десерт «Звёздный чизкейк»">
+          <h3>Десерт «Звёздный чизкейк»</h3>
+          <p>
+            Воздушный чизкейк с ягодным топпингом и ванилью. <i>Цена: 140 грн</i>
+          </p>
+        </article>
+      </section>
+      <section id="order-form">
+        <h2>Оформите заказ</h2>
+        <form>
+          <p><strong>Количество:</strong></p>
+          <label for="qty-burger">Бургер «Лунный» (шт):</label>
+          <input id="qty-burger" type="number" min="0" name="qty_burger" value="0">
+          <br><br>
+          <label for="qty-pasta">Паста «Сливочная комета» (шт):</label>
+          <input id="qty-pasta" type="number" min="0" name="qty_pasta" value="0">
+          <br><br>
+          <label for="qty-cheesecake">Десерт «Звёздный чизкейк» (шт):</label>
+          <input id="qty-cheesecake" type="number" min="0" name="qty_cheesecake" value="0">
+          <br><br>          
+          <p><strong>Дополнения:</strong></p>
+          <label for="extra-cheese">
+            <input id="extra-cheese" type="checkbox" name="extras" value="extra_cheese">
+            Доп. сыр
+          </label>
+          <br>
+          <label for="fries">
+            <input id="fries" type="checkbox" name="extras" value="fries">
+            Картофель фри
+          </label>
+          <br>
+          <label for="sauce">
+            <input id="sauce" type="checkbox" name="extras" value="sauce">
+            Фирменный соус
+          </label>
+          <br><br>
+          <p><strong>Напиток:</strong></p>
+          <label for="drink-cola">
+            <input id="drink-cola" type="radio" name="drink" value="cola">
+            Кола
+          </label>
+          <br>
+          <label for="drink-water">
+            <input id="drink-water" type="radio" name="drink" value="water">
+            Вода
+          </label>
+          <br>
+          <label for="drink-tea">
+            <input id="drink-tea" type="radio" name="drink" value="tea">
+            Чай
+          </label>
+          <br><br>
+          <label for="special-requests">Особые пожелания к заказу (например, без лука):</label>
+          <br>
+          <textarea id="special-requests" name="special_requests" rows="4" cols="40"></textarea>
+          <br><br>
+          <input type="submit" value="Перейти к оформлению заказа">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Сделано с любовью от jewgm</p>
+    </footer>
+  </body>
+</html>
+
